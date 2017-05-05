@@ -1,4 +1,4 @@
-package com.lmonkiewicz.endpoints.server.crud;
+package com.lmonkiewicz.endpoints.server.endpoints.crud;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

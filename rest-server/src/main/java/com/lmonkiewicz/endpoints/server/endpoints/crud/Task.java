@@ -1,4 +1,4 @@
-package com.lmonkiewicz.endpoints.server.crud;
+package com.lmonkiewicz.endpoints.server.endpoints.crud;
 
 import lombok.Data;
 

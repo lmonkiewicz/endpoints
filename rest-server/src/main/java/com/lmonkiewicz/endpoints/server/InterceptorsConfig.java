@@ -1,6 +1,6 @@
-package com.lmonkiewicz.endpoints.server.config;
+package com.lmonkiewicz.endpoints.server;
 
-import com.lmonkiewicz.endpoints.server.config.interceptor.MonkeyInterceptor;
+import com.lmonkiewicz.endpoints.server.interceptor.MonkeyInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

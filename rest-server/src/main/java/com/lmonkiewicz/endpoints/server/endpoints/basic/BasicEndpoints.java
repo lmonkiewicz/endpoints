@@ -1,4 +1,4 @@
-package com.lmonkiewicz.endpoints.server.basic;
+package com.lmonkiewicz.endpoints.server.endpoints.basic;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

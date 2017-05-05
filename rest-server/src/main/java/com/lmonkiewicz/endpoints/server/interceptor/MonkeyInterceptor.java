@@ -1,4 +1,4 @@
-package com.lmonkiewicz.endpoints.server.config.interceptor;
+package com.lmonkiewicz.endpoints.server.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -15,7 +15,7 @@ public class MonkeyInterceptor implements HandlerInterceptor {
 
     public static final String TIME_DELAY_PARAM = "t";
     public static final String ERROR_THRESHOLD = "r";
-    public static final String ERROR_CODE = "e";
+    public static final String ERROR_CODE = "c";
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
