@@ -1,4 +1,4 @@
-##Simple Rest server offering few endpoints for testing:
+## Simple Rest server offering few endpoints for testing:
 
 I've made this server for testing purpouses of different clients.
 Each endpoint can generate custom errors with varying propabilty of occurance. It can be controlled with following query parameters:
@@ -10,7 +10,7 @@ For example:
 
 `curl -i -X GET -G "http://localhost:8080/basic/randomNumber?t=5000&r=0.5&c=404"`
 
-###Running
+### Running
 
 `mvnw install spring-boot:run`
 
@@ -19,7 +19,7 @@ It will start on port 8080, you can invoke it with:
 `curl -i -X GET http://localhost:8080/basic/randomNumber`
 
 
-###Basic endpoints
+### Basic endpoints
 
 Generate random double:
 
@@ -43,7 +43,7 @@ Return desired error code:
 
 `GET /basic/error/403`
 
-###CRUD endpoints
+### CRUD endpoints
 
 There are few endpoints for general CRUD operation on Task object:
 ```
@@ -64,7 +64,7 @@ There are few endpoints for general CRUD operation on Task object:
 
 `DELETE /crud/tasks/1` - deletes a task
 
-###Mirror endpoints
+### Mirror endpoints
 
 This endpoints responds with the same JSON as in the request body:
 
