@@ -13,23 +13,23 @@ import java.util.UUID;
 class BasicEndpoints {
 
     @GetMapping("/randomNumber")
-    Double random(){
-        return Math.random();
+    ResponseValue random(){
+        return new ResponseValue(Math.random());
     }
 
     @GetMapping("/timestamp")
-    Long timestamp() {
-        return System.currentTimeMillis();
+    ResponseValue timestamp() {
+        return new ResponseValue(System.currentTimeMillis());
     }
 
     @GetMapping("/uuid")
-    String uuid() {
-        return UUID.randomUUID().toString();
+    ResponseValue uuid() {
+        return new ResponseValue(UUID.randomUUID().toString());
     }
 
     @GetMapping("/hello")
-    String hello(@RequestHeader(name="Name") String name) {
-        return String.format("Hello %s!", name);
+    ResponseValue hello(@RequestHeader(name="Name") String name) {
+        return new ResponseValue(String.format("Hello %s!", name));
     }
 
     @GetMapping("/error/{code}")
